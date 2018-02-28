@@ -93,13 +93,11 @@ function onWorkerDown(id, worker) {
   )
 }
 
-bot.onText(/\/tictac/, () => {
-  console.log('matched')
-
+bot.onText(/\/check/, () => {
   ticker()
 })
 
-// setInterval(ticker, 60 * 5 * 1000)
+setInterval(ticker, 60 * 15 * 1000)
 
 bot.onText(/\/register/, (msg, match) => {})
 
