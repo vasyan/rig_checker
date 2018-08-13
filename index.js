@@ -48,6 +48,10 @@ async function ticker() {
             return console.log(err)
           }
 
+          ModelUser.findByIdAndUpdate(user._id, {
+            lastApiRespoce: JSON.stringify(body)
+          })
+
           R.forEach(({ worker, hashrate }) => {
             if (hashrate === 0 && user.alarms.indexOf(worker) === -1) {
               onWorkerDown(user._id, worker)

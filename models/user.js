@@ -6,6 +6,7 @@ const userSchema = new Schema(
     _id: String,
     wallet: String,
     alarms: Array,
+    lastApiResponce: String
   },
   { timestamps: true }
 )
