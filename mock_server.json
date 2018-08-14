@@ -1,0 +1,18 @@
+{
+  "*": {
+    "data": [
+      {
+        "worker": "foo",
+        "hashrate": 0
+      },
+      {
+        "worker": "bar",
+        "hashrate": 100
+      },
+      {
+        "worker": "buzz",
+        "hashrate": 140.666
+      }
+    ]
+  }
+}
